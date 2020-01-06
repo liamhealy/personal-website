@@ -24,23 +24,62 @@
   color: white;
 }
 
-.App-header h1 {
+.App-info {
+  background-color: #c3cee1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.Grid-container {
+  display: grid;
+  grid-template-columns: 300px 500px;
+  grid-template-columns: auto auto;
+  grid-row-gap: 40px;
+  grid-column-gap: 5px;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.Grid-item-small {
+  display: flex;
+  justify-content: center;
+}
+
+.Grid-item-large {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Grid-item-large h4 {
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+h1 {
   font-weight: lighter;
   font-size: 200px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.App-header h3 {
+h3 {
   font-weight: lighter;
   font-size: 50px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.App-header h4 {
+h4 {
   font-weight: lighter;
-  font-size: 30px;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .App-header ul {
@@ -49,7 +88,7 @@
 
 .App-header li {
   display: inline;
-  margin: 50px;
+  margin-right: 50px;
 }
 
 .App-header a {
@@ -57,7 +96,7 @@
 }
 
 .App-header a:hover {
-  color: darkcyan;
+  color: #c3cee1;
 }
 
 .App-link {
