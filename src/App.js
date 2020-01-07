@@ -43,23 +43,24 @@ function App() {
         <ul>
           <li>
             <a href="https://github.com/liamhealy" target="_blank" rel="noopener noreferrer">
-              <Icon icon={githubIcon} height='1.5em'/>
+              <Icon icon={githubIcon} height='1em'/>
             </a>
           </li>
           <li>
             <a href="https://medium.com/@lhealy0711" target="_blank" rel="noopener noreferrer">
-              <Icon icon={mediumIcon} height='1.5em'/>
+              <Icon icon={mediumIcon} height='1em'/>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/liamhealy0711/" target="_blank" rel="noopener noreferrer">
-              <Icon icon={linkedinIcon} height='1.5em'/>
+              <Icon icon={linkedinIcon} height='1em'/>
             </a>
           </li>
         </ul>
+        <h5>Check out some of my work below</h5>
       </div>
       <div className="App-info">
-        <Grid container divided="vertically">
+        <Grid container divided="vertically" style={{height: '90vh'}}>
           <Grid.Row columns={2}>
             <Grid.Column>
               <div className="Grid-item-small">
@@ -75,19 +76,20 @@ function App() {
               </div>
             </Grid.Column>
             <Grid.Column>
-              <Segment placeholder style={{height: '100%', backgroundColor: '#c3cee1'}}>
+              <Segment placeholder style={{height: '100%', backgroundColor: '#c3cee1'}} color="blue">
                 <h4>
-                  This is my most recent project. I built this application using
-                  React and React-router along with material-ui on the frontend, while
-                  on the backend I built a JSON API using Ruby on Rails. In addition, I
-                  incorporated the new Twitch API and a few handy npm packages.
+                  This project is a Twitch dashboard and forum. This application was 
+                  built using React and React-router along with 
+                  material-ui on the frontend, while on the backend I built a JSON 
+                  API using Ruby on Rails. In addition, I incorporated the new Twitch
+                  API and a few handy npm packages.
                 </h4>
               </Segment>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row columns={2}>
             <Grid.Column>
-              <Segment placeholder style={{height: '100%', backgroundColor: '#c3cee1'}}>
+              <Segment placeholder style={{height: '100%', backgroundColor: '#c3cee1'}} color="red">
                 <h4>
                   This application is a dynamic portfolio generator for software
                   developers. I built this application using React and React-router
