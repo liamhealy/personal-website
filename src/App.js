@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import githubIcon from '@iconify/icons-simple-icons/github';
 import mediumIcon from '@iconify/icons-simple-icons/medium';
 import javascriptIcon from '@iconify/icons-simple-icons/javascript';
@@ -7,6 +7,7 @@ import rubyIcon from '@iconify/icons-simple-icons/ruby';
 import reactIcon from '@iconify/icons-simple-icons/react';
 import railsIcon from '@iconify/icons-simple-icons/rails';
 import linkedinIcon from '@iconify/icons-simple-icons/linkedin';
+import { Grid } from 'semantic-ui-react'
 
 import './App.css';
 
@@ -28,6 +29,9 @@ function App() {
         </a>
       </header> */}
       <div className="App-header">
+        {/* <Header as='h1'>Liam Healy</Header>
+        <Header as='h3'>Actively seeking a role in software engineering</Header>
+      </div> */}
         <h1>Liam Healy</h1>
         <h3>Actively seeking a role in software engineering</h3>
         <ul>
@@ -37,14 +41,78 @@ function App() {
           <li><Icon icon={railsIcon} height='1em' color="red"/></li>
         </ul>
         <ul>
-          <li><a href="https://github.com/liamhealy" target="_blank"><Icon icon={githubIcon} height='1.5em'/></a></li>
-          <li><a href="https://medium.com/@lhealy0711" target="_blank"><Icon icon={mediumIcon} height='1.5em'/></a></li>
-          <li><a href="https://www.linkedin.com/in/liamhealy0711/" target="_blank"><Icon icon={linkedinIcon} height='1.5em'/></a></li>
+          <li>
+            <a href="https://github.com/liamhealy" target="_blank" rel="noopener noreferrer">
+              <Icon icon={githubIcon} height='1.5em'/>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@lhealy0711" target="_blank" rel="noopener noreferrer">
+              <Icon icon={mediumIcon} height='1.5em'/>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/liamhealy0711/" target="_blank" rel="noopener noreferrer">
+              <Icon icon={linkedinIcon} height='1.5em'/>
+            </a>
+          </li>
         </ul>
       </div>
       <div className="App-info">
-        <h3>Here are some projects I've worked on recently</h3>
-        <div className="Grid-container">
+        <h3 style={{marginBottom: 50}}>Some of my most recent projects</h3>
+        <Grid container divided="vertically">
+          <Grid.Row columns={2}>
+            <Grid.Column>
+              <div className="Grid-item-small">
+                <iframe 
+                  title="Flatiron // Twitch"
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/6LJpu5la6Tk" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                />
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="Grid-item-large">
+                <h4>
+                  This is my most recent project. I built this application using
+                  React and React-router along with material-ui on the frontend, while
+                  on the backend I built a JSON API using Ruby on Rails. In addition, I
+                  incorporated the new Twitch API and a few handy npm packages.
+                </h4>
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row columns={2}>
+            <Grid.Column>
+              <div className="Grid-item-large">
+              <h4>
+                This application is a dynamic portfolio generator for software
+                developers. I built this application using React and React-router
+                with semantic-ui on the frontend. For the backend I built a JSON API
+                using Ruby on Rails.
+              </h4>
+              </div>
+            </Grid.Column>
+            <Grid.Column>
+              <div className="Grid-item-small">
+                <iframe 
+                  title="Portfolio Generator"
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/--RuWbBQsaY" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                />
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        {/* <div className="Grid-container">
             <div className="Grid-item-small">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6LJpu5la6Tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -67,7 +135,7 @@ function App() {
             <div className="Grid-item-small">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/--RuWbBQsaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
