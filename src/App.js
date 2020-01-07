@@ -1,6 +1,6 @@
 import React from 'react';
 import Profile from './components/Profile';
-import Projects from './components/Projects';
+// import Projects from './components/Projects';
 
 import './App.css';
 

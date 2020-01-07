@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Transition, Icon as SemIcon } from 'semantic-ui-react'
+import { Transition } from 'semantic-ui-react'
 import { Icon } from '@iconify/react';
 import githubIcon from '@iconify/icons-simple-icons/github';
 import mediumIcon from '@iconify/icons-simple-icons/medium';
@@ -7,7 +7,6 @@ import javascriptIcon from '@iconify/icons-simple-icons/javascript';
 import rubyIcon from '@iconify/icons-simple-icons/ruby';
 import reactIcon from '@iconify/icons-simple-icons/react';
 import railsIcon from '@iconify/icons-simple-icons/rails';
-import html5Icon from '@iconify/icons-simple-icons/html5';
 import linkedinIcon from '@iconify/icons-simple-icons/linkedin';
 
 export default class Profile extends Component {
@@ -29,7 +28,6 @@ export default class Profile extends Component {
     return (
       <Transition duration={{ hide, show }} visible={visible}>
         <div>
-          <h3></h3>
           <h1>Liam Healy</h1>
           <h3>Full-stack web developer in New York, NY</h3>
           <ul>
