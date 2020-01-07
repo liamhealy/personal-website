@@ -69,9 +69,9 @@ function App() {
                   width="560" 
                   height="315" 
                   src="https://www.youtube.com/embed/6LJpu5la6Tk" 
-                  frameborder="0" 
+                  frameBorder="0" 
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen
+                  allowFullScreen
                 />
               </div>
             </Grid.Column>
@@ -87,7 +87,20 @@ function App() {
               </Segment>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row columns={2}>
+        <Grid.Row columns={2}>
+          <Grid.Column>
+              <div className="Grid-item-small">
+                <iframe 
+                  title="Portfolio Generator"
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/--RuWbBQsaY" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                />
+              </div>
+            </Grid.Column>
             <Grid.Column>
               <Segment placeholder style={{height: '100%', backgroundColor: '#c3cee1'}} color="red">
                 <h4>
@@ -97,19 +110,6 @@ function App() {
                   using Ruby on Rails.
                 </h4>
               </Segment>
-            </Grid.Column>
-            <Grid.Column>
-              <div className="Grid-item-small">
-                <iframe 
-                  title="Portfolio Generator"
-                  width="560" 
-                  height="315" 
-                  src="https://www.youtube.com/embed/--RuWbBQsaY" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen
-                />
-              </div>
             </Grid.Column>
           </Grid.Row>
         </Grid>
