@@ -7,7 +7,7 @@ import rubyIcon from '@iconify/icons-simple-icons/ruby';
 import reactIcon from '@iconify/icons-simple-icons/react';
 import railsIcon from '@iconify/icons-simple-icons/rails';
 import linkedinIcon from '@iconify/icons-simple-icons/linkedin';
-import { Grid } from 'semantic-ui-react'
+import { Grid, Segment } from 'semantic-ui-react'
 
 import './App.css';
 
@@ -59,12 +59,11 @@ function App() {
         </ul>
       </div>
       <div className="App-info">
-        <h3 style={{marginBottom: 50}}>Some of my most recent projects</h3>
         <Grid container divided="vertically">
           <Grid.Row columns={2}>
             <Grid.Column>
               <div className="Grid-item-small">
-                <iframe 
+                <iframe
                   title="Flatiron // Twitch"
                   width="560" 
                   height="315" 
@@ -76,26 +75,26 @@ function App() {
               </div>
             </Grid.Column>
             <Grid.Column>
-              <div className="Grid-item-large">
+              <Segment placeholder style={{height: '100%', backgroundColor: '#c3cee1'}}>
                 <h4>
                   This is my most recent project. I built this application using
                   React and React-router along with material-ui on the frontend, while
                   on the backend I built a JSON API using Ruby on Rails. In addition, I
                   incorporated the new Twitch API and a few handy npm packages.
                 </h4>
-              </div>
+              </Segment>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row columns={2}>
             <Grid.Column>
-              <div className="Grid-item-large">
-              <h4>
-                This application is a dynamic portfolio generator for software
-                developers. I built this application using React and React-router
-                with semantic-ui on the frontend. For the backend I built a JSON API
-                using Ruby on Rails.
-              </h4>
-              </div>
+              <Segment placeholder style={{height: '100%', backgroundColor: '#c3cee1'}}>
+                <h4>
+                  This application is a dynamic portfolio generator for software
+                  developers. I built this application using React and React-router
+                  with semantic-ui on the frontend. For the backend I built a JSON API
+                  using Ruby on Rails.
+                </h4>
+              </Segment>
             </Grid.Column>
             <Grid.Column>
               <div className="Grid-item-small">

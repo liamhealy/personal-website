@@ -34,6 +34,7 @@
   font-size: calc(10px + 2vmin);
   color: #282c34;
 }
+
 /*
 .Grid-container {
   display: grid;
@@ -45,9 +46,11 @@
   margin-top: 30px;
 }
 */
-.Grid-item-small {
+
+.Grid-item {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .Grid-item-large {
@@ -55,6 +58,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 /*
 .Grid-item-large h4 {
   font-weight: lighter;
@@ -98,7 +102,7 @@ h4 {
 
 .App-header a:hover {
   color: #c3cee1;
-} */
+}
 
 .App-link {
   color: #61dafb;
