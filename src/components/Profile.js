@@ -35,27 +35,25 @@ export default class Profile extends Component {
             <li><Icon icon={reactIcon} height='1em' color="skyblue"/></li>
             <li><Icon icon={rubyIcon} height='1em' color="#820C02"/></li>
             <li><Icon icon={railsIcon} height='1em' color="red"/></li>
-            {/* <li><Icon icon={html5Icon} height='1em' color="#F16529"/></li> */}
           </ul>
           <ul>
             <li>
               <a href="https://github.com/liamhealy" target="_blank" rel="noopener noreferrer">
-                <Icon icon={githubIcon} height='1em'/>
+                <Icon icon={githubIcon} />
               </a>
             </li>
             <li>
               <a href="https://medium.com/@lhealy0711" target="_blank" rel="noopener noreferrer">
-                <Icon icon={mediumIcon} height='1em'/>
+                <Icon icon={mediumIcon}/>
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/liamhealy0711/" target="_blank" rel="noopener noreferrer">
-                <Icon icon={linkedinIcon} height='1em'/>
+                <Icon icon={linkedinIcon}/>
               </a>
             </li>
           </ul>
-          <h5>Check out some of my work below</h5>
-          {/* <SemIcon name="arrow circle down"/> */}
+          <h5>More about me below</h5>
         </div>
       </Transition>
     )
