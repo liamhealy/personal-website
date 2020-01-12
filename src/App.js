@@ -2,6 +2,7 @@ import React from 'react';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import About from './components/About';
+import Copyright from './components/Copyright';
 
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
       </div>
       <div className="App-info">
         <Projects />
+        <Copyright />
       </div>
     </div>
   );
