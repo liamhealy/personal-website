@@ -34,7 +34,7 @@
 }
 
 .App-bio {
-  background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #4c8797 65%, #5aa883 100%);
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,8 @@
 }
 
 h1 {
-  font-family: 'Prompt', sans-serif;
+  /* font-family: 'Prompt', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   font-size: 70px;
   margin-top: 0;
@@ -64,20 +65,28 @@ h1 {
 
 h2 {
   color: 'white';
-  font-family: 'Asap', sans-serif;
+  /* font-family: 'Asap', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
   font-weight: lighter;
 }
 
 h3 {
-  font-family: 'Asap', sans-serif;
+  /* font-family: 'Asap', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
   font-weight: lighter;
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
+h4 {
+  font-weight: lighter;
+  font-family: 'Roboto Mono', monospace;
+}
+
 h5 {
-  font-family: 'Asap', sans-serif;
+  /* font-family: 'Asap', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
   font-weight: lighter;
   margin-top: 10;
   margin-bottom: 0;
