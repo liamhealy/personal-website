@@ -5,7 +5,7 @@ export default function Projects() {
 
 	return (
 		<Container fluid>
-            <h3 style={{color: 'white', margin: 30}}>
+            <h3 style={{color: 'white', margin: 30, minHeight: '10vh'}}>
                 Experienced in Ruby, JavaScript and Java based programming and a 
                 Bachelor’s Degree in Computer Science. My interest in modifying video 
                 games led me to learn more about software development and design, 

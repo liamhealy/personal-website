@@ -7,6 +7,8 @@ import javascriptIcon from '@iconify/icons-simple-icons/javascript';
 import rubyIcon from '@iconify/icons-simple-icons/ruby';
 import reactIcon from '@iconify/icons-simple-icons/react';
 import railsIcon from '@iconify/icons-simple-icons/rails';
+import javaIcon from '@iconify/icons-simple-icons/java';
+import haskellIcon from '@iconify/icons-simple-icons/haskell';
 import linkedinIcon from '@iconify/icons-simple-icons/linkedin';
 
 export default class Profile extends Component {
@@ -35,6 +37,8 @@ export default class Profile extends Component {
             <li><Icon icon={reactIcon} height='1em' color="skyblue"/></li>
             <li><Icon icon={rubyIcon} height='1em' color="#820C02"/></li>
             <li><Icon icon={railsIcon} height='1em' color="red"/></li>
+            <li><Icon icon={javaIcon} height='1em' color="orange"/></li>
+            <li><Icon icon={haskellIcon} height='1em' color="purple"/></li>
           </ul>
           <ul>
             <li>
@@ -53,7 +57,7 @@ export default class Profile extends Component {
               </a>
             </li>
           </ul>
-          <h5>More about me below</h5>
+          {/* <h4>More about me below</h4> */}
         </div>
       </Transition>
     )
